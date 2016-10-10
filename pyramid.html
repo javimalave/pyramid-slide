@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            font-family: "Courier New", monospace;
+            line-height: 0;
+        }
+        body {
+            width:50%;
+            margin:auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pyramid Slide</h1>
+    <h3>
+        Behold this wonderful pyramid:
+    </h3>
+    <input id = "h" type="range" min="0" max="20" value="0" step="1" onchange="showValue(this.value)" />
+    <span id="tall">0</span>
+
+    <div id="pyramid">
+        <!-- Our pyramid will go inside here -->
+
+        <div id="construction">
+            <p>Move the slider to build a pyramid.</p>
+
+        </div>
+    </div>
+
+    <script src="pyramid.js"></script>
+</body>
+</html>
